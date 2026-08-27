@@ -26,6 +26,8 @@ builder.Services.AddScoped<IAccountRepository, AccountRepository>();
 
 // Services
 builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IAccountService, AccountService>();
+builder.Services.AddScoped<ITransferRepository, TransferRepository>();
 
 // Helpers
 builder.Services.AddSingleton<JwtTokenGenerator>();
