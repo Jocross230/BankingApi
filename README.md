@@ -53,7 +53,38 @@ The application uses Microsoft SQL Server with the following tables:
 
 ### Authentication
 
-#### Register
+#### Register# Banking API
+
+A secure RESTful Banking API built with ASP.NET Core, Dapper, and Microsoft SQL Server.
+
+## Project Overview
+
+This API allows users to register, authenticate, manage their account information, transfer funds, and view their transaction history.
+
+The project follows Separation of Concerns by separating the application into Controllers, Services, Repositories, DTOs, Models, and the Database layer.
+
+## Features
+
+- User Registration
+- User Login
+- JWT Authentication
+- Protected API Endpoints
+- Account Information and Balance Retrieval
+- Fund Transfers
+- Transaction History
+- Transaction Logging
+- Atomic Database Transactions for Fund Transfers
+- SQL Server Integration
+- Dapper Data Access
+- BCrypt Password Hashing
+- Swagger API Documentation
+
+## Architecture
+
+The application follows a layered architecture:
+
+```text
+Controller → Service → Repository → Dapper → SQL Server
 
 POST /api/Auth/register
 
@@ -61,5 +92,5 @@ POST /api/Auth/register
 {
   "fullName": "Josiah onyeje",
   "email": "josiah@gmail.com",
-  "password": "Josiah2222#"
+  "password": "null"
 }
